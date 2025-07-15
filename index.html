@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unit & Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Unit & Currency Converter</h1>
+
+    <div class="converter">
+      <div class="row">
+        <label for="type">Conversion Type:</label>
+        <select id="type">
+          <option value="length">Length</option>
+          <option value="weight">Weight</option>
+          <option value="temperature">Temperature</option>
+          <option value="currency">Currency</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <input type="number" id="inputValue" placeholder="Enter value" />
+      </div>
+
+      <div class="row">
+        <select id="fromUnit"></select>
+        <span class="arrow">→</span>
+        <select id="toUnit"></select>
+      </div>
+
+      <div class="row">
+        <button onclick="convert()">Convert</button>
+      </div>
+
+      <div class="row result">
+        <p id="result">Result: —</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
